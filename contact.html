@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="https://i.pinimg.com/236x/9c/d0/99/9cd09931312c24256eaf9b68d4c7af64.jpg" alt="La cuisine marocaine">
+        <nav>
+            <ul>
+                <li> <a href="index.html">Acceuil</a></li>
+                <li> <a href="Video.html">Video</a></li>
+                <li> <a href="audio.html">Audio</a></li>
+                <li> <a href="contact.html">Contactez-Nous</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main>
+        <form action="formulaire.php" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Formulaire de contact</legend>
+                <div>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" required placeholder="Indiquez votre Nom">
+                </div><br>
+                <div>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" required placeholder="Indiquez votre prénom"> 
+                </div><br>
+                <div>
+                    <label for="email">Email :</label>
+                    <input type="text" name="email" id="email" required placeholder="Indiquez votre Email">
+                </div><br>
+                <div>
+                    <label for="civilite">Civilité :</label>
+                    <input type="radio" name="civilité" id="civilite" value="Mr">Mr
+                    <input type="radio" name="civilité" value="Mme">Mme
+                    <input type="radio" name="civilité" value="Autre">Autre
+                </div><br>
+                <div>
+                    <label for="newsletter">S'abonner à newsletter</label>
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                </div>
+            </fieldset><br>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Annuler</button>
+        </form>
+    </main>
+    <footer>
+        <address>
+            <p><a href="Mentions-légales">Mentions légales</a></p>
+            <div>
+                <p>14, Allé Charles Pathé</p>
+                <p>18000, Bourges France</p>
+                <p>Telephone : +33 2 23 24 25 26</p>
+                <p>&copy; 2024, AMRI Imane</p>
+            </div>
+        </address>
+    </footer>
+</body>
+</html>
